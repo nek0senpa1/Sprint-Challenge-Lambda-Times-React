@@ -33,6 +33,7 @@ export default class Content extends Component {
         selected: tab
       }
     )
+    console.log("I wuz clicked !!! ", tab)
   };
 
   filterCards = () => {

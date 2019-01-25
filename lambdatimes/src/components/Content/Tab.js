@@ -16,10 +16,12 @@ const Tab = props => {
       
       var tabby =props.tab
 
+      
   return (
     <div
       className={nameWidget}
-      onClick={(e) => props.selectTabHandler(tabby)}
+      onClick={(e) => props.selectTabHandler(props.tab)}
+      
 
         /* Replace this dummy click handler function with your selectTabHandler function from props 
          you'll need to pass the `tab` in as an argument to this handler. */
