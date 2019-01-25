@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import Tabs from './Tabs';
 import Cards from './Cards';
 
+import PropTypes from 'prop-types';
+
 // Importing our tab and card data. No need to change anything here.
 import { tabData, cardData } from '../../data';
 
@@ -49,11 +51,16 @@ export default class Content extends Component {
           of the items from cardData. 
         - else, it should only return those cards whose 'tab' matched this.state.selected.
     */
-   if (this.state.selected === 'all') {
-    return this.state.cards;
-  }
-  else {
     
+    const someStuff = this.state.cards;
+
+    const filteredStuff = someStuff.filter(bobo => bobo.tab ===this.state.selected);
+
+    if (this.state.selected === 'all') {
+      return this.state.cards;
+    }
+    else {
+      return filteredStuff;
   }
 
     
@@ -73,3 +80,12 @@ export default class Content extends Component {
     );
   }
 }
+
+
+tabData.propTypes = {
+  dummyData: PropTypes.array
+};
+
+cardData.propTypes = {
+  dummyData: PropTypes.array
+};
