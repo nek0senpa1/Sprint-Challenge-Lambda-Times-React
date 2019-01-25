@@ -7,19 +7,19 @@ import styled from 'styled-components'
 
 import { injectGlobal } from "styled-components";
 
-injectGlobal`
-  body {
-    @import url('https://fonts.googleapis.com/css?family=Notable');
-    font-family: 'Notable', sans-serif;
-  }
-`
 
 injectGlobal`
   body {
-    @import url("https://fonts.googleapis.com/css?family=Ruslan+Display");
-    font-family: 'Ruslan Display', cursive;
+    @import url('https://fonts.googleapis.com/css?family=Anton');
+    font-family: 'Anton', sans-serif;
+
+    @import url('https://fonts.googleapis.com/css?family=Monoton');
+    font-family: 'Monoton', cursive;
   }
 `
+
+
+
 
 const Headdy = styled.div `
 display: flex;
@@ -36,7 +36,7 @@ padding-bottom: 15px;
 
 const JediMindTrick = styled.h1 `
 font-size: 60px;
-  font-family: Ruslan Display, Notable, serif;
+  font-family: Monoton, Anton, serif;
   font-weight: bold;
   flex: 8;
   text-align: center;
