@@ -5,6 +5,22 @@ import styled from 'styled-components'
 // Refactor this component to use styled components and not classNames. 
 // You can find the corresponding CSS in the CSS/index.css file
 
+import { injectGlobal } from "styled-components";
+
+injectGlobal`
+  body {
+    @import url('https://fonts.googleapis.com/css?family=Notable');
+    font-family: 'Notable', sans-serif;
+  }
+`
+
+injectGlobal`
+  body {
+    @import url("https://fonts.googleapis.com/css?family=Ruslan+Display");
+    font-family: 'Ruslan Display', cursive;
+  }
+`
+
 const Headdy = styled.div `
 display: flex;
 justify-content: space-between;
@@ -20,7 +36,7 @@ padding-bottom: 15px;
 
 const JediMindTrick = styled.h1 `
 font-size: 60px;
-  font-family: Didot, serif;
+  font-family: Ruslan Display, Notable, serif;
   font-weight: bold;
   flex: 8;
   text-align: center;
