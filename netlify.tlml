@@ -1,0 +1,3 @@
+base=“Sprint-Challenge-Lambda-Times-React”
+publish=“lambdatimes”
+command=“yarn build”
