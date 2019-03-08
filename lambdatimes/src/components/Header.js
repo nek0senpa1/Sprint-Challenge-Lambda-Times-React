@@ -36,6 +36,8 @@ padding-bottom: 15px;
 
 const JediMindTrick = styled.h1 `
 font-size: 60px;
+display: flex;
+justify-content: center;
   font-family: Monoton, Anton, serif;
   font-weight: bold;
   flex: 8;
@@ -55,9 +57,9 @@ padding: 10px;
 const Header = () => {
   return (
     <Headdy>
-      <StarTrekSucks>SMARCH 32, 2018</StarTrekSucks>
-      <JediMindTrick>Lambda Times</JediMindTrick>
-      <StarTrekSucks>98°</StarTrekSucks>
+      <StarTrekSucks></StarTrekSucks>
+      <JediMindTrick>Amber Times</JediMindTrick>
+      <StarTrekSucks></StarTrekSucks>
     </Headdy>
   )
 }
